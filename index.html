@@ -1,12 +1,14 @@
 <!doctype html>
 <!--Quite a few clients strip your Doctype out, and some even apply their own. Many clients do honor your doctype and it can make things much easier if you can validate constantly against a Doctype.-->
 <html>
+  
 <head> <style>
   @import url("https://use.typekit.net/enp6pmf.css");
   font-family:scatterplot-vf,sans-serif,
 font-variation-settings:"RAND" 0, "wght" 300;
   
 </style>
+
 <style>
 
   
@@ -43,6 +45,7 @@ h1 {
 }
 
 .gallery {
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -50,10 +53,10 @@ h1 {
 }
 
 .gallery-item {
+  margin: auto;
   position: relative;
-  width: calc(25% - 20px);
+  width: calc(33% - 20px);
   height: auto;
-  margin: 10px;
   cursor: pointer;
   transition: transform 0.5s ease;
 }
@@ -64,6 +67,7 @@ h1 {
 
 /* The Modal (background) */
 .modal {
+  margin: auto;
   display: none;
   position: fixed;
   z-index: 1000;
@@ -79,6 +83,7 @@ h1 {
 
 /* Modal content (image) */
 .modal-content {
+  margin: auto;
   position: relative;
   width: 90%;
   height: auto;
@@ -142,10 +147,11 @@ h1 {
 
 <style type="text/css">
 body {
-	margin: 0;
+  
+	margin: auto;
 }
 body, table, td, p, a, li, blockquote {
-	-webkit-text-size-adjust: none!important;
+	-webkit-text-size-adjust: flex!important;
  font-family: "scatterplot-vf", sans-serif;
 font-variation-settings: "RAND" 30, "wght" 300;
   
@@ -157,7 +163,7 @@ button {
 @media screen and (max-width:600px) {
 /*styling for objects with screen size less than 600px; */
 body, table, td, p, a, li, blockquote {
-	-webkit-text-size-adjust: none!important;
+	-webkit-text-size-adjust: flex!important;
 	font-family: "scatterplot-vf", sans-serif;
 font-variation-settings: "RAND" 0, "wght" 300;
 }
@@ -197,7 +203,7 @@ table.responsiveContent {
 @media screen and (max-width:480px) {
 /*styling for objects with screen size less than 480px; */
 body, table, td, p, a, li, blockquote {
-	-webkit-text-size-adjust: none!important;
+	-webkit-text-size-adjust: flex!important;
 	font-family: "scatterplot-vf", sans-serif;
 font-variation-settings: "RAND" 0, "wght" 300;
 }
@@ -237,7 +243,7 @@ button {
 	width: 90%!important;
 }
 }
-  }
+  
 
 </style>
 </head>
