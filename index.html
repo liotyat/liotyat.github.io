@@ -20,7 +20,6 @@ font-variation-settings:"RAND" 0, "wght" 300;
 }
   
 
-
 @keyframes mymove {
   from {font-variation-settings: "RAND" 20, "wght" 150;}
   to {font-variation-settings: "RAND" 500, "wght" 150;}
@@ -30,19 +29,30 @@ font-variation-settings:"RAND" 0, "wght" 300;
 
 </style>
 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, center">
 <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+}
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding: 0 0px;
+  justify-content: flex-start;
+  padding: 0 15px;
 }
 
 .gallery-item {
-  position: center;
-  width: calc(50% - 20px);
-  height: fit-content;
+  position: relative;
+  width: calc(25% - 20px);
+  height: auto;
   margin: 10px;
   cursor: pointer;
   transition: transform 0.5s ease;
@@ -61,7 +71,7 @@ font-variation-settings:"RAND" 0, "wght" 300;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: #ffffffcc;
+  background-color: rgba(255, 255, 255, 0.8);
   align-items: center;
   justify-content: center;
   transition: opacity 0.5s ease;
@@ -70,7 +80,7 @@ font-variation-settings:"RAND" 0, "wght" 300;
 /* Modal content (image) */
 .modal-content {
   position: relative;
-  width: 100%;
+  width: 90%;
   height: auto;
   max-width: 90%;
   max-height: 90%;
@@ -79,23 +89,23 @@ font-variation-settings:"RAND" 0, "wght" 300;
   animation: zoomIn 0.5s;
 }
 
-
 @keyframes zoomIn {
   from {transform: scale(0.6);}
-  to {transform: scale(1);}
+  to {transform: scale(1:1);}
 }
 
 .modal.show {
   display: flex;
   opacity: 1;
 }
+
 /* Close button */
 .close {
   position: absolute;
   top: 10px;
   right: 15px;
   color: #000000;
-  font-size: 45px;
+  font-size: 50px;
   font-weight: bold;
   cursor: pointer;
   transition: transform 0.3s;
@@ -107,24 +117,25 @@ font-variation-settings:"RAND" 0, "wght" 300;
   bottom: 15px;
   width: 100%;
   text-align: center;
-  color: #ffffff;
+  color: #929292;
   font-size: 24px;
 }
-@media screen and (max-width: 100%) {
+
+@media screen and (max-width: 768px) {
   .gallery-item {
-    width: calc(50% - 20px);
+     width: calc(50% - 20px);
   }
 }
 
-@media screen and (max-width: 100%) {
-  .gallery-item {
+@media screen and (max-width: 480px) {
+  .gallery-item  {
     width: calc(100% - 20px);
   }
 }
 </style>
 
 
-<title>Lio Portfolio</title>
+<title>lio portoflio</title>
 
 <!-- Please use an inliner tool to convert all CSS to inline as inpage or external CSS is removed by email clients -->
 <!-- important in CSS is used to prevent the styles of currently inline CSS from overriding the ones mentioned in media queries when corresponding screen sizes are encountered -->
@@ -226,6 +237,7 @@ button {
 	width: 90%!important;
 }
 }
+  }
 
 </style>
 </head>
@@ -244,7 +256,7 @@ button {
                   <!-- First header column with Logo -->
                   <tbody>
                     <tr>
-                      <td style="font-size: 12px; color:#929292; text-align:center;font-family: scatterplot-vf, sans-serif; font-variation-settings: RAND 0, wght 300;" >liotyates@gmail.com</td>
+                      <td style="font-size: 12px; color:#929292; text-align:center;font-family: scatterplot-vf, sans-serif; font-variation-settings: RAND 0, wght 300"; >liotyates@gmail.com</td>
                     </tr>
                   </tbody>
                 </table>
@@ -252,7 +264,7 @@ button {
                   <!-- Second header column with ISSUE|DATE -->
                   <tbody>
                     <tr>
-                      <td style="font-size: 12px; color:#929292; text-align:center; font-family: scatterplot-vf, sans-serif;font-variation-settings: RAND 0, wght 300;" >PORTFOLIO  |   2026</td>
+                      <td style="font-size: 12px; color:#929292; text-align:center; font-family: scatterplot-vf, sans-serif;font-variation-settings: RAND 0, wght 300;" >PORTFOLIO  2026</td>
                     </tr>
                   </tbody>
                 </table></td>
@@ -317,25 +329,28 @@ button {
                     <div align="left" style="font-size: 14px; font-style: normal; font-weight: 100; color: #929292; line-height: 1.8; text-align:justify; padding:10px 20px 0px 20px;font-family: scatterplot-vf, sans-serif; font-variation-settings: RAND 0, wght 300;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus congue metus quam, eu luctus risus tincidunt ultrices. Mauris interdum magna ut orci tempus feugiat. Curabitur nec mauris vulputate, imperdiet lorem nec, tincidunt risus. Nunc tincidunt magna eu placerat interdum. Mauris lorem metus, malesuada id metus ut, semper ultricies urna. Mauris placerat gravida malesuada. Cras rhoncus sem eu tortor condimentum, quis semper neque ultricies. Morbi sollicitudin urna ante, at pellentesque nunc gravida a. Sed nulla magna, tincidunt id purus vel, malesuada sollicitudin felis. Morbi sit amet turpis eget sapien cursus tempus. Mauris sed consequat nunc, nec venenatis enim. Pellentesque accumsan, nibh sed rutrum facilisis, magna nulla bibendum arcu, a gravida enim justo ac libero. Proin molestie est eu ante interdum, eget luctus mauris bibendum. Vivamus vitae quam ultrices, luctus dui tempor, condimentum dolor. Donec urna odio, facilisis ut lacus a, convallis rhoncus magna.</div>
                  <br>
             
+
+<!-- Header -->
+
                     <div class="gallery">
-  <img src="routine.png" alt="Routine Drawing" class="gallery-item" onclick="openModal('modal1', 'Routine Drawing')">
-  <img src="i keep having dreams where a cherub_.JPG" alt="I keep having dreams" class="gallery-item" onclick="openModal('modal2', 'I keep having dreams')">
-  <img src="CP piece 1.png" alt="Memories" class="gallery-item" onclick="openModal('modal3', 'Memories')">
+  <img src="routined.png" alt="The mundane" class="gallery-item" onclick="openModal('modal1', 'The mundane')">
+  <img src="i keep having dreams where a cherub_.JPG" alt="A younger version of myself haunts me" class="gallery-item" onclick="openModal('modal2', 'A younger version of myself haunts me')">
+  <img src="memories drawing.png" alt="Memories of home, then and now" class="gallery-item" onclick="openModal('modal3', 'Memories of home, then and now')">
 
 
   <div id="modal1" class="modal">
   <span class="close" onclick="closeModal('modal1')">&times;</span>
-  <img src="routine.png" alt="Routine Drawing" class="modal-content">
+  <img src="routined.png" alt="The mundane" class="modal-content">
   <div class="caption"></div>
 </div>
 <div id="modal2" class="modal">
   <span class="close" onclick="closeModal('modal2')">&times;</span>
-  <img src="i keep having dreams where a cherub_.JPG" alt="I keep having dreams" class="modal-content">
+  <img src="i keep having dreams where a cherub_.JPG" alt="A younger version of myself haunts me" class="modal-content">
   <div class="caption"></div>
 </div>
 <div id="modal3" class="modal">
   <span class="close" onclick="closeModal('modal3')">&times;</span>
-  <img src="CP piece 1.png" alt="Memories" class="modal-content">
+  <img src="memories drawing.png" alt="Memories of home, then and now" class="modal-content">
   <div class="caption"></div>
 </div>
 
@@ -358,7 +373,6 @@ function closeModal(modalId) {
 </script>
 </h2>
 </body>
-
 
 </body>
             
