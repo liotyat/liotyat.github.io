@@ -16,7 +16,12 @@ font-variation-settings:"RAND" 0, "wght" 300;
                   #myDIV {
       font-variation-settings: "RAND" 20, "wght" 150;
       
-  animation: mymove 20s infinite;
+  animation: mymove 20s ;
+					  animation-iteration-count: infinite;
+            animation-direction: alternate;
+              animation-timing-function: ease-in-out; 
+
+	
 
 
 }
@@ -25,6 +30,7 @@ font-variation-settings:"RAND" 0, "wght" 300;
 @keyframes mymove {
   from {font-variation-settings: "RAND" 20, "wght" 150;}
   to {font-variation-settings: "RAND" 500, "wght" 150;}
+ 
   
 
 }
